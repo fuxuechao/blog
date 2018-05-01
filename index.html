@@ -84,8 +84,8 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>let<br>1、声明的变量只有在当前作用域中有效<br>2、在同一个作用域不能重复声明,否则会报错<br>    {<br>    let a=10;<br>    let a=20;<br>}<br><code>//Uncaught SyntaxError: Identifier &#39;a&#39; has already been declared</code><br>3、不会变量提升，var会在预编译环节变量的声明会提升至顶部<br>    console.log(a)<br>let a = 10;<br><code>//Uncaught ReferenceError: a is not defined</code><br>4、在全局作用域创建a和window.a不相同，var a会修改window.a的值</p>
-<p>const<br>1、声明的是常量，不能修改<br>    const A= 10;<br>A=20;<br><code>//Uncaught TypeError: Assignment to constant variable.</code><br>2、声明的常量只有在当前作用域中有效<br>3、在同一个作用域不能重复声明,否则会报错<br>4、声明的常量必须初始化<br>    const A<br><code>//Uncaught SyntaxError: Missing initializer in const declaration</code><br>5、不会变量提升<br>6、不允许修改绑定，但允许修改值<br>对象<br>    const person = {<br>                name:”xiaoming”<br>            }<br>            person.name = “zhangsan”<br>            console.log(person)<br>    //Object {name: “zhangsan”}</p>
+        <p>let<br>1、声明的变量只有在当前作用域中有效<br>2、在同一个作用域不能重复声明,否则会报错<br>    {<br>        let a=10;<br>        let a=20;<br>    }<br>    //Uncaught SyntaxError: Identifier ‘a’ has already been declared<br>3、不会变量提升，var会在预编译环节变量的声明会提升至顶部<br>    console.log(a)<br>    let a = 10;<br>    //Uncaught ReferenceError: a is not defined<br>4、在全局作用域创建a和window.a不相同，var a会修改window.a的值</p>
+<p>const<br>1、声明的是常量，不能修改<br>    const A= 10;<br>    A=20;<br>    //Uncaught TypeError: Assignment to constant variable.<br>2、声明的常量只有在当前作用域中有效<br>3、在同一个作用域不能重复声明,否则会报错<br>4、声明的常量必须初始化<br>    const A<br>    //Uncaught SyntaxError: Missing initializer in const declaration<br>5、不会变量提升<br>6、不允许修改绑定，但允许修改值<br>对象<br>    const person = {<br>                name:”xiaoming”<br>            }<br>            person.name = “zhangsan”<br>            console.log(person)<br>    //Object {name: “zhangsan”}</p>
 <pre><code>const person = {
             name:&quot;xiaoming&quot;
         }
@@ -94,17 +94,17 @@
         }
         console.log(person)    
 //报错
-</code></pre><p>数组<br>    const a = [1,2,3]<br>        a[0] = 3;<br>        console.log(a)<br>        //[3, 2, 3]</p>
+</code></pre><p>数组<br>    const a = [1,2,3]<br>        a[0] = 3;<br>    console.log(a)<br>    //[3, 2, 3]</p>
 <pre><code>const a = [1,2,3]
     a = [3,2,3]
-    console.log(a)
+console.log(a)
 //报错
 </code></pre><p>7、在全局作用域创建a和window.a不相同</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/05/01/firstblog/" data-id="cjgnld25a0000achyzw62dlfz" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/05/01/firstblog/" data-id="cjgnlg1qu000034hyi8dudqz0" class="article-share-link">Share</a>
       
       
     </footer>
@@ -149,7 +149,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/05/01/hello-world/" data-id="cjgnld25a0001achydqn3h1yl" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/05/01/hello-world/" data-id="cjgnlg1r4000134hyoengq3yw" class="article-share-link">Share</a>
       
       
     </footer>
