@@ -76,7 +76,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/blog/2018/05/01/firstblog/">firstblog</a>
+      <a class="article-title" href="/blog/2018/05/01/firstblog/">let和const</a>
     </h1>
   
 
@@ -84,11 +84,12 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="Welcome-to"><a href="#Welcome-to" class="headerlink" title="Welcome to"></a>Welcome to</h1><h2 id="lalala"><a href="#lalala" class="headerlink" title="lalala"></a>lalala</h2>
+        <h1 id="let和const"><a href="#let和const" class="headerlink" title="let和const"></a>let和const</h1><p>1、声明的变量只有在当前作用域中有效<br>2、在同一个作用域不能重复声明,否则会报错<br>{<br>    let a=10;<br>    let a=20;<br>}<br>//Uncaught SyntaxError: Identifier ‘a’ has already been declared<br>3、不会变量提升，var会在预编译环节变量的声明会提升至顶部<br>console.log(a)<br>let a = 10;<br>//Uncaught ReferenceError: a is not defined<br>4、在全局作用域创建a和window.a不相同，var a会修改window.a的值</p>
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/05/01/firstblog/" data-id="cjgnk9c3e0000kwhyzqh6j99v" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/05/01/firstblog/" data-id="cjgnkx0z20000ikhy3ul993la" class="article-share-link">Share</a>
       
       
     </footer>
@@ -129,7 +130,7 @@
       <ul>
         
           <li>
-            <a href="/blog/2018/05/01/firstblog/">firstblog</a>
+            <a href="/blog/2018/05/01/firstblog/">let和const</a>
           </li>
         
       </ul>
